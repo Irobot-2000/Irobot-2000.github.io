@@ -1,48 +1,79 @@
 <!DOCTYPE html>
-<html class="">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <!--
-  Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
-      https://cordova.apache.org/docs/en/latest/
-  Some notes:
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-      * Enable inline JS: add 'unsafe-inline' to default-src
-  -->
-  <meta http-equiv="Content-Security-Policy" content="
-    worker-src blob:; 
-    child-src blob: gap:;
-    img-src 'self' blob: data:;
-    default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
-
-  <meta name="theme-color" content="#fff">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-  <title>Orbit Send</title>
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-  <link rel="icon" href="icons/favicon.png">
+  <meta charset="UTF-8">
+  <title>Nilana's portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
-  <!-- built styles file will be auto injected -->
-  <script type="module" crossorigin src="./assets/index-DIP_7Pq0.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D2nTDAgY.css">
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="loader-container">
+    <div id="loader">
+      <svg class="loader-icon" xmlns="http://www.w3.org/2000/svg" viewBox="6 -16 8.5 12">
+        <path class="loader-path"
+          d="M5.245-7.031 5.32-12.748 10.184-9.876 10.23-4.086 15.188-7.01 15.143-12.738M10.184-9.889 15.113-12.738 10.198-15.554 5.31-12.75M5.25-7.02 10.221-4.115"
+          stroke="#000000" stroke-width="0.5" fill="none" stroke-linejoin="round" stroke-linecap="round" />
+      </svg>
+    </div>
+  </div>
 
-  <!-- Third party library-->
-  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  <div id="main">
+    <div class="hero">
+      <div class="logo"></div>
+      <p class="title fade-in">Hello, I'm Nilana Silva.</p>
+      <p class="title title2">This is my portfolio website.</p>
+    </div>
 
+    <div class="grid">
+      <div data-href="https://orbit-send.pages.dev" class="card flex-row-if-possible"
+        style="background-image: url('background(1).webp')">
+        <img class="card-image" src="orbit-send.webp"></img>
+        <div class="text flex-column">
+          <h1>Orbit Send</h1>
+          <p>This is a website that makes sharing of files over a local area network very easy.</p>
+          <p>Framework 7 is the frontend framework while data transferring in handled by the simplepeer library. A
+            wrapper aroud the webRTC api.</p>
+          <p>It allows sharing of text and access to camera too.</p>
+          <p>Taking group selfies has never been easier.</p>
+          <p>Try it out today at <a href="https://orbit-send.pages.dev">https://orbit-send.pages.dev</a> .</p>
+        </div>
+      </div>
+
+      <div data-href="https://astronomyclubsnic.22web.org" class="card flex-row-if-possible"
+        style="background-image: url('background(3).png')">
+        <div class="text flex-column">
+          <h1>Astronomy club website</h1>
+          <p>This is St.Nicholas' International College's astronomy club's website that is mostly built with wordpress,
+          </p>
+          <p>but I also added a bit of extra html to the home page, (a hero section and a video).</p>
+          <p>The side pannel was also added by me</p>
+          <p>link : <a href="https://astronomyclubsnic.22web.org">https://astronomyclubsnic.22web.org</a></p>
+        </div>
+        <img class="card-image" src="acsnic.png"></img>
+      </div>
+
+      <div data-href="https://codepen.io/nilana" class="card flex-row-if-possible"
+        style="background-image: url('background(2).webp')">
+        <img class="card-image" src="codepen.webp"></img>
+        <div class="text flex-column">
+          <h1>Experiments at codepen</h1>
+          <p>Small projects that I made with web technologies</p>
+          <p>Most of these projects are just me trying new ideas and the results are not always how I pictured they
+            would be...</p>
+          <p>So I call them *Experiments*</p>
+          <p>Follow me on codepen : <a href="https://codepen.io/nilana">https://codepen.io/nilana</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+<footer id="footer" class="text-align-center">copyright &copy;2024 Nilana Silva</footer>
 
 </html>

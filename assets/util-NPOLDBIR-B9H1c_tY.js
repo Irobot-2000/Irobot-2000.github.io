@@ -1,1 +1,0 @@
-import{c as s,e as o,f as t,g as n,a as f}from"./index-DytoshlS.js";import"https://cdnjs.cloudflare.com/ajax/libs/simple-peer/9.11.1/simplepeer.min.js";export{s as config,o as errors,t as fromDataTransfer,n as getDirHandlesFromInput,f as getFileHandlesFromInput};
