@@ -24,7 +24,7 @@
     width: 300px;
     height: 300px;
     margin: 20px;
-    background: url(logo.png);
+    background: url(logo.jpg);
     background-size: 160%;
     background-position: -95px -90px;
     border-radius: 20px;
@@ -73,14 +73,14 @@
 }
 
 body {
-    background: url(noise.png);
+    background: url(noise.jpg);
     background-repeat: repeat;
     margin: 0px;
     padding: 0px;
 }
 .logo
 {
-    background:url(logo.png);
+    background:url(logo.jpg);
     border:1px solid #182848;
     border-radius: 50%;
     width:300px;
@@ -177,7 +177,7 @@ body {
     height:300px;
     border-radius:20px;
     margin:10px;
-    background-image:url(noise.png);
+    background-image:url(noise.jpg);
     
 }
 #main
